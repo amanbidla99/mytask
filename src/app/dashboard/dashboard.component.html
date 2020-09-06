@@ -1,0 +1,51 @@
+<app-header></app-header>
+<div style="width: 100%; padding-top: 30px; padding-left: 30px;">
+  
+<form [formGroup]="dashboard">
+    <div class="form-group row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">First Name</label>
+        <div class="col-sm-4">
+          <!-- <input type="text"  class="form-control" formControlName="fname"  placeholder="First Name" [(ngModel)]="userDetails.fname"> -->
+          {{userDetails.fname}}
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Last Name</label>
+        <div class="col-sm-4">
+          <!-- <input type="password" class="form-control" formControlName="lname" placeholder="Last Name"> -->
+          {{userDetails.lname}}
+        </div>
+      </div>
+      <div class="form-group row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Country</label>
+          <div class="col-sm-4">
+            <!-- <input type="password" class="form-control" formControlName="Country" placeholder="Password"> -->
+            {{userDetails.Country}}  
+        </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Bio</label>
+          <div class="col-sm-4">
+            <!-- <input type="password" class="form-control" formControlName="Bio" placeholder="Bio"> -->
+            {{userDetails.Bio}}  
+        </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Username</label>
+          <div class="col-sm-4">
+            <!-- <input type="password" class="form-control" formControlName="Username" placeholder="Username"> -->
+            {{userDetails.Username}}  
+        </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-4">
+            <!-- <input type="password" class="form-control" formControlName="Email" placeholder="Email"> -->
+            {{userDetails.Email}}  
+        </div>
+        </div>
+<input type="button" value="Update" class="btn btn-primary" (click)="navigate()">
+</form>
+  </div>
+
+

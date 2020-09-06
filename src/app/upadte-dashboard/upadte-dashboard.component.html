@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div style="width: 100%; padding-top: 30px; padding-left: 30px;">
+  
+<form [formGroup]="updatedashboard">
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">First Name</label>
+          <div class="col-sm-4">
+            <input type="text"  class="form-control" formControlName="fname"  placeholder="First Name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Last Name</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" formControlName="lname" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Country</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" formControlName="Country" placeholder="Country">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Bio</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" formControlName="Bio" placeholder="Bio">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Username</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" formControlName="Username" placeholder="Username">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" formControlName="Email" placeholder="Email">
+            </div>
+          </div>
+<input type="button" class="btn btn-primary" value="Save" (click)="Onsave()" [disabled]="!updatedashboard.valid">
+</form>
+  </div>
+  
+
+
